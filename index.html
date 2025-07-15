@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jellycat</title>
+		<!-- 按顺序引入: 外链式样式表后写的生效 -->
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+		<!-- 快捷导航 -->
+		<div class="shortcut">
+			<div class="wrapper">
+				<ul>
+					<li><a href="./join.html">用户登录</a></li>
+					<li><a href="./new_file.html">免费注册</a></li>
+					<li><a href="./cart.html">我的订单</a></li>
+					<li><a href="./login.html">会员中心</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">在线客服</a></li>
+					<li>
+						<a href="#"><span></span>手机版</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<body>
+			<div class="header wrapper">
+			  <div class="logo">
+			    <h1><a href="#"></a></h1>
+			  </div>
+			  <div class="nav">
+			    <ul>
+			      <li><a href="./index.html">首页</a></li>
+			      <!-- 新增下拉菜单容器 -->
+			      <li class="dropdown">
+			        <a href="./new.html" class="dropdown-btn">甄选</a>
+			        <!-- 下拉子菜单 -->
+			        <div class="dropdown-content">
+			          <a href="#">热门推荐</a>
+			          <a href="#">限时折扣</a>
+			          <a href="#">品牌专区</a>
+			        </div>
+			      </li>
+			      <li><a href="./show.html">趣味</a></li>
+			      <li><a href="./detail.html">经典</a></li>
+			      <li><a href="#">新品</a></li>
+			      <li><a href="#">配饰</a></li>
+			      <li><a href="#">儿童读物</a></li>
+			      <li><a href="#">母婴专区</a></li>
+			    </ul>
+			  </div>
+			  <div class="search">
+			    <input type="text" placeholder="搜一搜" />
+				<!-- 定位 放大镜 -->
+				<span></span>
+			</div>
+			<div class="car"></div>
+		</div>
+		<!-- 焦点图 -->
+		<div class="banner">
+			<div class="wrapper">
+				<!-- 侧导航栏 -->
+				<div class="aside">
+					<ul>
+						<li>
+							<a href="#">人气甄选<span>莱奥拉熊</span></a>
+						</li>
+						<li>
+							<a href="#">经典伙伴<span>巴塞罗熊 邦尼兔</span></a>
+						</li>
+						<li>
+							<a href="#">趣味系列<span>运动 植物 物品</span></a>
+						</li>
+						<li>
+							<a href="#">新品系列<span>全球首发新品</span></a>
+						</li>
+						<li>
+							<a href="#">包挂配饰<span>斜挎包 背包 挂饰</span></a>
+						</li>
+						<li>
+							<a href="#">儿童读物<span>布书 绘本 触感书</span></a>
+						</li>
+						<li>
+							<a href="#">母婴专区<span>音乐拉铃 安抚巾</span></a>
+						</li>
+						<li>
+							<a href="#">探索更多<span>老朋友回归</span></a>
+						</li>
+					</ul>
+				</div>
+				<!-- 焦点图 -->
+				<div id="imageContainer">
+					<img src="images/banner/banner_1.png">
+				</div>
+				<!-- 箭头 -->
+				<!-- prev: 上一个 -->
+				<a href="#" class="prev"></a>
+				<!-- next : 下一个 -->
+				<a href="#" class="next"></a>
+			</div>
+		</div>
+		<!-- 精品推荐 -->
+		<div class="goods wrapper">
+			<!-- hd header 头部 -->
+			<div class="hd">
+				<h2>●即刻探索<span>探索Jellycat世界</span></h2>
+				<a href="#">查看全部</a>
+			</div>
+			<!-- 商品列表 -->
+			<div class="bd clearfix shop_list">
+				<ul>
+				</ul>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="wrapper">
+				<div class="top">
+					<ul>
+						<li>
+							<!-- 通过伪元素添加标签实现精灵图 -->
+							<span>全球购物</span>
+						</li>
+						<li>
+							<span>物流快捷</span>
+						</li>
+						<li>
+							<span>质量保证</span>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom">
+					<p>
+						<a href="#">关于我们</a> | <a href="#">帮助中心</a> |
+						<a href="#">售后服务</a> | <a href="#">配送与验收</a> |
+						<a href="#">商务合作</a> | <a href="#">搜索推荐</a> |
+						<a href="#">友情链接</a>
+					</p>
+					<p> @ Jellycat Limited 2025 All rights reserved</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<!-- 实现焦点图切换功能 -->
+		<script src="js/focus.js"></script>
+		<script>
+			// 单击头部导航栏右上角的购物车 进入购物车页面
+			$(document).on('click', '.car', function() {
+				// 在新标签页中打开购物车页面
+				window.open('cart.html', '_blank');
+			});
+		</script>
+		<!-- 商品列表 -->
+		<script>
+			var list = [{
+					id: 1,
+					picture: './images/goods/巴塞罗熊.png',
+					name: '巴塞罗熊玩偶',
+					price: '249.00',
+					address: './detail.html',
+				},
+				{
+					id: 2,
+					picture: './images/goods/邦尼兔.png',
+					name: '害羞星星邦尼兔',
+					price: '235.00',
+					address: '#',
+				},
+				{
+					id: 3,
+					picture: './images/goods/趣味花束.png',
+					name: '趣味花束',
+					price: '399.00',
+					address: '#',
+				},
+				{
+					id: 4,
+					picture: './images/goods/趣味彩虹生日蛋糕.png',
+					name: '趣味彩虹生日蛋糕',
+					price: '519.00',
+					address: '#',
+				},
+				{
+					id: 5,
+					picture: './images/goods/西高地.png',
+					name: '门罗苏格兰梗小狗西高地',
+					price: '255.00',
+					address: '#',
+				},
+				{
+					id: 6,
+					picture: './images/goods/趣味双叶桃子.png',
+					name: '趣味双叶桃子',
+					price: '225.00',
+					address: '#',
+				},
+				{
+					id: 7,
+					picture: './images/goods/阿鲁巴岛椰子.png',
+					name: '趣味阿鲁巴岛椰子',
+					price: '299.00',
+					address: '#',
+				},
+				{
+					id: 8,
+					picture: './images/goods/小猫尾巴活动书.png',
+					name: '小猫尾巴活动书',
+					price: '180.00',
+					address: '#',
+				},
+
+			];
+
+			var html = '';
+			// $.each(list, function(index, item) {...}) 是 jQuery 提供的一个 each() 方法，用于遍历数组或对象中的每个元素，并执行指定的回调函数。
+			$.each(list, function(index, item) {
+				html += `
+						<li id="${item.id}">
+							<a href="${item.address}">
+								<img src="${item.picture}">
+								<h3>${item.name}</h3>
+								<div>￥<span>${item.price}</span></div>
+							</a>
+						</li>
+						`;
+			});
+
+			$('.shop_list ul').html(html);
+		</script>
+	</body>
+</html>

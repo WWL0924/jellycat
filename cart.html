@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/cart.css">
+	</head>
+	<body>
+		<!-- 快捷导航 -->
+		<div class="shortcut">
+			<div class="wrapper">
+				<ul>
+					<li><a href="./join.html">用户登录</a></li>
+					<li><a href="./new_file.html">免费注册</a></li>
+					<li><a href="./cart.html">我的订单</a></li>
+					<li><a href="./login.html">会员中心</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">在线客服</a></li>
+					<li>
+						<a href="#"><span></span>手机版</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 头部 -->
+		<div class="header wrapper">
+			<div class="logo">
+				<h1><a href="#"></a></h1>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="./index.html">首页</a></li>
+					<li><a href="./new.html">甄选</a></li>
+					<li><a href="./show.html">趣味</a></li>
+					<li><a href="./detail.html">经典</a></li>
+					<li><a href="#">新品</a></li>
+					<li><a href="#">配饰</a></li>
+					<li><a href="#">儿童读物</a></li>
+					<li><a href="#">母婴专区</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input type="text" placeholder="搜一搜">
+				<!-- 定位 放大镜 -->
+				<span></span>
+			</div>
+			<div class="car">
+				<!-- 右上角的数字，表示加入购物车中商品的数量 -->
+				<!-- <span>2</span> -->
+			</div>
+		</div>
+		<div class="xtx-cart-page">
+			<div class="container">
+				<div class="title">首页 > 购物车</div>
+				<!-- 购物车区域 -->
+				<div class="cart">
+					<table>
+						<thead>
+							<tr>
+								<th width="120">
+									<input type="checkbox" id="checkAll">&nbsp;全选
+								</th>
+								<th width="400">商品</th>
+								<th width="220">单价</th>
+								<th width="180">数量</th>
+								<th width="180">小计</th>
+								<th width="140">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="cart-item">
+								<td> <input type="checkbox" checked class="goodChecked"> </td>
+								<td>
+									<div class="goods">
+										<img src="./images/goods/邦尼兔.png" style="width:80px">
+										<div>
+											<p class="name ellipsis">害羞星星邦尼兔</p>
+										</div>
+									</div>
+								</td>
+								<td class="tc p-price">￥235.00</td>
+								<td class="tc p-num">
+									<div class="wrap-input">
+										<a class="btn-reduce">-</a>
+										<input class="text quantity-text buy-num" value="1">
+										<a class="btn-add">+</a>
+									</div>
+								</td>
+								<td class="tc p-sum">￥235.00</td>
+								<td class="tc p-action"> <a class="green">删除</a> </td>
+							</tr>
+							<tr class="cart-item">
+								<td> <input type="checkbox" class="goodChecked"> </td>
+								<td>
+									<div class="goods">
+										<img src="./images/goods/巴塞罗熊.png" style="width:80px">
+										<div>
+											<p class="name ellipsis">巴塞罗熊玩偶</p>
+										</div>
+									</div>
+								</td>
+								<td class="tc p-price">￥249.00</td>
+								<td class="tc p-num">
+									<div class="wrap-input">
+										<a class="btn-reduce">-</a>
+										<input class="text quantity-text buy-num" value="1">
+										<a class="btn-add">+</a>
+									</div>
+								</td>
+								<td class="tc p-sum">￥249.00</td>
+								<td class="tc p-action"> <a class="green">删除</a> </td>
+							</tr>
+							<tr class="cart-item">
+								<td> <input type="checkbox" class="goodChecked"> </td>
+								<td>
+									<div class="goods">
+										<img src="./images/goods/趣味彩虹生日蛋糕.png" style="width:80px">
+										<div>
+											<p class="name ellipsis">趣味彩虹生日蛋糕</p>
+										</div>
+									</div>
+								</td>
+								<td class="tc p-price">￥519.00</td>
+								<td class="tc p-num">
+									<div class="wrap-input">
+										<a class="btn-reduce">-</a>
+										<input class="text quantity-text buy-num" value="1">
+										<a class="btn-add">+</a>
+									</div>
+								</td>
+								<td class="tc p-sum">￥519.00</td>
+								<td class="tc p-action"> <a class="green">删除</a> </td>
+							</tr>
+							<tr class="cart-item">
+								<td> <input type="checkbox" class="goodChecked"> </td>
+								<td>
+									<div class="goods">
+										<img src="./images/goods/趣味花束.png" style="width:80px">
+										<div>
+											<p class="name ellipsis">趣味花束</p>
+										</div>
+									</div>
+								</td>
+								<td class="tc p-price">￥399.00</td>
+								<td class="tc p-num">
+									<div class="wrap-input">
+										<a class="btn-reduce">-</a>
+										<input class="text quantity-text buy-num" value="1">
+										<a class="btn-add">+</a>
+									</div>
+								</td>
+								<td class="tc p-sum">￥399.00</td>
+								<td class="tc p-action"> <a class="green">删除</a> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 结算区域 -->
+				<div class="action">
+					<div class="amount-sum">已经选择 <em class="red"></em> 件商品</div>
+					<div class="price-sum">&nbsp;总价：<em class="red"></em></div>
+					<span class="settlement">下单结算</span>
+				</div>
+			</div>
+		</div>
+		<!-- 版权区域 -->
+		<div class="footer">
+			<div class="wrapper">
+				<div class="top">
+					<ul>
+						<li>
+							<!-- 通过伪元素添加标签实现精灵图 -->
+							<span>全球购物</span>
+						</li>
+						<li>
+							<span>物流快捷</span>
+						</li>
+						<li>
+							<span>质量保证</span>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom">
+					<p>
+						<a href="#">关于我们</a> | <a href="#">帮助中心</a> |
+						<a href="#">售后服务</a> | <a href="#">配送与验收</a> |
+						<a href="#">商务合作</a> | <a href="#">搜索推荐</a> |
+						<a href="#">友情链接</a>
+					</p>
+					<p>@ Jellycat Limited 2025 All rights reserved</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/cart.js"></script>
+		<script>
+			$(document).on('click', '.settlement', function() {
+				alert('暂未开发此功能');
+			});
+		</script>
+	</body>
+</html>
