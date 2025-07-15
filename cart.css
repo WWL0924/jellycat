@@ -1,0 +1,147 @@
+.xtx-cart-page {
+  background-color: #f5f5f5;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+.title {
+  padding: 25px 10px;
+}
+
+.cart {
+  background: #fff;
+  color: #666;
+}
+.cart table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  line-height: 24px;
+}
+
+.cart table th,
+.cart table td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.cart table th:first-child {
+  text-align: left;
+
+  padding-left: 30px;
+  color: #999;
+}
+.cart table th {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 50px;
+}
+
+.cart-none {
+  text-align: center;
+  padding: 50px 0;
+  background: #fff;
+}
+.cart-none img {
+  width: 180px;
+}
+.cart-none p {
+  color: #999999;
+  padding: 20px 0;
+}
+
+/* td的样式 */
+
+.tc {
+  text-align: center;
+}
+.red {
+  color: #cf4444;
+}
+
+.green {
+  color:#02c0da;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+/* 表格商品列表中，某个商品的图片 */
+
+.goods {
+  display: flex;
+  align-items: center;
+}
+
+.goods img {
+  width: 100px;
+  height: 100px;
+}
+.goods div {
+  width: 280px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.goods div .ellipsis {
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 操作栏的样式 */
+.action {
+  display: flex;
+  background: #fff;
+  margin-top: 20px;
+  height: 80px;
+  align-items: center;
+  font-size: 16px;
+  justify-content: flex-end;
+  padding: 0 30px;
+}
+
+.action .red {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 下单结算，样式 */
+.action .settlement {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  border-color: #02c0da;
+  background: #02c0da;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+/* 数量的文本框的样式 */
+
+.tc .wrap-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tc .wrap-input a {
+  width: 30px;
+  height: 40px;
+  overflow: hidden;
+  border: 1px solid #c2c3c4;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.tc .wrap-input .text {
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+}

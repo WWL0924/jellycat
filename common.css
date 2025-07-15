@@ -1,0 +1,260 @@
+/* 各个页面相同的样式表 : 头, 尾部 */
+/* 版心 */
+.wrapper {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut {
+  height: 52px;
+  background-color: #02c0da;
+}
+
+.shortcut .wrapper {
+  height: 52px;
+}
+
+/* 目的: 所有的文字内容居右侧对齐 */
+.shortcut .wrapper ul {
+  float: right;
+}
+
+/* 目的: 让所有的文字在一行显示 */
+.shortcut .wrapper li {
+  float: left;
+  line-height: 52px;
+}
+
+.shortcut .wrapper a {
+  padding: 0 16px;
+  border-right: 1px solid white;
+  font-size: 14px;
+  color: white;
+}
+
+.shortcut .wrapper a span {
+  display: inline-block;
+  margin-right: 8px;
+  width: 11px;
+  height: 16px;
+  background-image: url(../images/sprites.png);
+  background-position: -160px -70px;
+
+  vertical-align: middle;
+}
+
+/* 清除a的边框线: 最后一个li里面的a */
+.shortcut .wrapper li:last-child a {
+  border: 0;
+}
+
+/* 头部 */
+.header {
+  margin: 30px auto;
+  height: 50px;
+}
+
+.logo {
+  float: left;
+  width: 207px;
+  height: 70px;
+}
+
+/* logo 搜索引擎优化做法 */
+.logo h1 {
+  width: 207px;
+  height: 70px;
+}
+
+.logo h1 {
+  display: block;
+  width: 207px;
+  height: 60px;
+  background-image: url(../images/logo.png);
+  background-size: contain;
+}
+
+.nav {
+  float: left;
+  margin-left: 40px;
+  height: 70px;
+}
+
+.nav li {
+  float: left;
+  margin-right: 48px;
+  line-height: 70px;
+}
+
+.nav li a {
+  padding-bottom: 7px;
+}
+
+.nav li a:hover {
+  color: #e1f0f5;
+  border-bottom: 1px solid#e1f0f5;
+}
+
+.search {
+  position: relative;
+  float: left;
+  margin-top: 24px;
+  margin-left: 34px;
+  width: 172px;
+  height: 30px;
+  border-bottom: 2px solid #ccc;
+}
+
+.search input {
+  padding-left: 30px;
+  width: 172px;
+  height: 28px;
+}
+
+.search input::placeholder {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.search span {
+  position: absolute;
+  left: 2px;
+  top: 0;
+  /* display: inline-block; */
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/sprites.png);
+  background-position: -79px -69px;
+}
+
+.car {
+  position: relative;
+  float: left;
+  margin-top: 28px;
+  margin-left: 15px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../images/sprites.png);
+  background-position: -119px -69px;
+}
+
+.car span {
+  /* 绝对定位, 盒子具备行内块特点 */
+  position: absolute;
+  right: -13px;
+  top: -6px;
+  width: 20px;
+  height: 15px;
+  background-color: #e26237;
+  border-radius: 8px;
+
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  line-height: 15px;
+}
+
+/* 版权footer */
+.footer {
+  /* height: 242px; */
+  background-color:#02c0da;
+}
+
+.footer .wrapper {
+  width: 1393px;
+}
+
+.footer .top {
+  padding-top: 51px;
+  padding-left: 135px;
+  height: 158px;
+  border-bottom: 3px solid #e1f0f5;
+}
+
+.footer .top li {
+  position: relative;
+  float: left;
+  margin-right: 300px;
+  width: 195px;
+  height: 58px;
+  line-height: 58px;
+}
+
+.footer .top li:last-child {
+  margin-right: 0;
+}
+
+/* 伪元素添加的标签  行内 */
+/* 如果行内块和行内文字无法通过vertical-align或行高对齐, 定位 */
+.footer .top li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* display: inline-block; */
+  content: '';
+  width: 58px;
+  height: 58px;
+  background-image: url(../images/sprites.png);
+  vertical-align: middle;
+}
+
+.footer .top li span {
+  margin-left: 77px;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* 第二个li里面的berfore添加背景图位置属性 */
+.footer .top li:nth-child(2)::before {
+  background-position: -130px 0;
+}
+.footer .top li:nth-child(3)::before {
+  background-position: -64px 0;
+}
+
+.footer .bottom {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+.footer .bottom a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer .bottom p {
+  margin-bottom: 15px;
+}
+/* 在common.css或index.css中添加以下样式 */
+.dropdown {
+  position: relative; /* 定位基准 */
+}
+
+.dropdown-content {
+  display: none; /* 初始隐藏 */
+  position: absolute; /* 绝对定位 */
+  background-color: #fff; /* 背景色 */
+  min-width: 120px; /* 最小宽度 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 阴影效果 */
+  z-index: 1000; /* 层级优先 */
+}
+
+.dropdown-content a {
+  display: block; /* 块级元素 */
+  padding: 8px 16px; /* 内边距 */
+  text-decoration: none; /* 去除下划线 */
+  color: #333; /* 文字颜色 */
+  white-space: nowrap; /* 禁止换行 */
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5; /* 鼠标悬停背景色 */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* 鼠标悬停时显示 */
+}
